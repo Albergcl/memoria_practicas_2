@@ -1,0 +1,19 @@
+{
+  "name": "catalogo-peliculas-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "start": "next start -p 3001"
+  },
+  "dependencies": {
+    "axios": "^1.15.2",
+    "next": "15.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "19.2.16",
+    "typescript": "^5"
+  }
+}

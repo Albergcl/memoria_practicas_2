@@ -1,0 +1,81 @@
+.movieCard {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: transform 0.2s, border-color 0.2s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.movieCard:hover {
+    transform: translateY(-4px);
+    border-color: var(--color-primary);
+}
+
+.posterContainer {
+    width: 100%;
+    aspect-ratio: 2/3;
+    background-color: var(--color-surface2);
+    overflow: hidden;
+    position: relative;
+}
+
+.poster {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.posterPlaceholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--color-surface2), var(--color-border));
+    font-size: 3rem;
+    color: var(--color-text-muted);
+}
+
+.movieInfo {
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+.movieTitle {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--color-text);
+    line-height: 1.3;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.movieYear {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+}
+
+.genreList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: auto;
+}
+
+.genreTag {
+    background-color: var(--color-surface2);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    padding: 2px 8px;
+    font-size: 0.7rem;
+    color: var(--color-text-muted);
+    white-space: nowrap;
+}

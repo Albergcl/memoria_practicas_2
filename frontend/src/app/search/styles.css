@@ -1,0 +1,221 @@
+.searchHeader {
+    margin-bottom: 32px;
+}
+
+.searchTitle {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--color-text);
+    margin-bottom: 8px;
+}
+
+.searchSubtitle {
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+}
+
+.searchBar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 32px;
+}
+
+.searchInput {
+    flex: 1;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 12px 16px;
+    color: var(--color-text);
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+.searchInput:focus {
+    outline: none;
+    border-color: var(--color-primary);
+}
+
+.searchInput::placeholder {
+    color: var(--color-text-muted);
+}
+
+.btnSearch {
+    padding: 12px 24px;
+    border-radius: var(--radius);
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: var(--color-primary);
+    border: none;
+    color: white;
+    white-space: nowrap;
+    transition: background 0.2s;
+}
+
+.btnSearch:hover:not(:disabled) {
+    background-color: var(--color-primary-hover);
+}
+
+.btnSearch:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.resultsList {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.resultCard {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    transition: border-color 0.2s;
+}
+
+.resultCard:hover {
+    border-color: var(--color-primary);
+}
+
+.resultPoster {
+    width: 80px;
+    height: 120px;
+    border-radius: var(--radius);
+    object-fit: cover;
+    flex-shrink: 0;
+    background-color: var(--color-surface2);
+}
+
+.resultPosterPlaceholder {
+    width: 80px;
+    height: 120px;
+    border-radius: var(--radius);
+    background: linear-gradient(135deg, var(--color-surface2), var(--color-border));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.resultInfo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.resultTitle {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-text);
+}
+
+.resultYear {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+}
+
+.resultOverview {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.resultGenres {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.genreTag {
+    background-color: var(--color-surface2);
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    padding: 2px 8px;
+    font-size: 0.7rem;
+    color: var(--color-text-muted);
+}
+
+.btnAdd {
+    align-self: flex-start;
+    padding: 8px 18px;
+    border-radius: var(--radius);
+    font-size: 0.875rem;
+    font-weight: 700;
+    background-color: var(--color-primary);
+    border: none;
+    color: white;
+    margin-top: auto;
+    transition: background 0.2s;
+    white-space: nowrap;
+}
+
+.btnAdd:hover:not(:disabled) {
+    background-color: var(--color-primary-hover);
+}
+
+.btnAdd:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.btnAdded {
+    background-color: #22c55e;
+}
+
+.btnAdded:hover:not(:disabled) {
+    background-color: #16a34a;
+}
+
+.loadingState,
+.emptyState,
+.idleState {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--color-text-muted);
+    font-size: 1rem;
+}
+
+.notAuthCard {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: 40px;
+    text-align: center;
+}
+
+.notAuthCard h2 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    color: var(--color-text);
+}
+
+.notAuthCard p {
+    color: var(--color-text-muted);
+    margin-bottom: 24px;
+}
+
+.btnLogin {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: var(--radius);
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: var(--color-primary);
+    color: white;
+    transition: background 0.2s;
+}
+
+.btnLogin:hover {
+    background-color: var(--color-primary-hover);
+}

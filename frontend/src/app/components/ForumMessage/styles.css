@@ -1,0 +1,33 @@
+.message {
+    background-color: var(--color-surface2);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 12px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.messageHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.messageUsername {
+    font-weight: 700;
+    font-size: 0.875rem;
+    color: var(--color-primary);
+}
+
+.messageDate {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    margin-left: auto;
+}
+
+.messageText {
+    font-size: 0.9rem;
+    color: var(--color-text);
+    line-height: 1.5;
+}

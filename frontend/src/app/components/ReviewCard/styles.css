@@ -1,0 +1,138 @@
+.reviewCard {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.reviewHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.reviewMeta {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.reviewUsername {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.reviewUser {
+    font-size: 0.8rem;
+    color: var(--color-text-muted);
+}
+
+.reviewDate {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+}
+
+.reviewActions {
+    display: flex;
+    gap: 8px;
+    margin-left: auto;
+}
+
+.reviewComment {
+    font-size: 0.9rem;
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+.btnEdit,
+.btnDelete {
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border: 1px solid var(--color-border);
+    background: none;
+    transition: all 0.2s;
+}
+
+.btnEdit {
+    color: var(--color-text-muted);
+}
+
+.btnEdit:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+}
+
+.btnDelete {
+    color: var(--color-text-muted);
+}
+
+.btnDelete:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+.editForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.editTextarea {
+    background-color: var(--color-surface2);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 10px;
+    color: var(--color-text);
+    font-size: 0.875rem;
+    resize: vertical;
+    min-height: 80px;
+    width: 100%;
+}
+
+.editTextarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+}
+
+.editButtons {
+    display: flex;
+    gap: 8px;
+}
+
+.btnSave {
+    padding: 6px 14px;
+    border-radius: var(--radius);
+    font-size: 0.8rem;
+    font-weight: 600;
+    background-color: var(--color-primary);
+    border: none;
+    color: white;
+    transition: background 0.2s;
+}
+
+.btnSave:hover {
+    background-color: var(--color-primary-hover);
+}
+
+.btnCancel {
+    padding: 6px 14px;
+    border-radius: var(--radius);
+    font-size: 0.8rem;
+    font-weight: 600;
+    background: none;
+    border: 1px solid var(--color-border);
+    color: var(--color-text-muted);
+    transition: all 0.2s;
+}
+
+.btnCancel:hover {
+    border-color: var(--color-text-muted);
+    color: var(--color-text);
+}

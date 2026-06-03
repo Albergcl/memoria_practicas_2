@@ -1,0 +1,92 @@
+.navbar {
+    background-color: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navLogo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    letter-spacing: -0.5px;
+}
+
+.navLogo span {
+    color: var(--color-text);
+}
+
+.navLinks {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.navLink {
+    padding: 8px 16px;
+    border-radius: var(--radius);
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-text-muted);
+    transition: color 0.2s, background 0.2s;
+    background: none;
+    border: none;
+}
+
+.navLink:hover {
+    color: var(--color-text);
+    background-color: var(--color-surface2);
+}
+
+.navLinkActive {
+    color: var(--color-text);
+    background-color: var(--color-surface2);
+}
+
+.navUser {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.navUsername {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+}
+
+.btnLogout {
+    padding: 8px 16px;
+    border-radius: var(--radius);
+    font-size: 0.875rem;
+    font-weight: 600;
+    background: none;
+    border: 1px solid var(--color-border);
+    color: var(--color-text-muted);
+    transition: all 0.2s;
+}
+
+.btnLogout:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+.btnLogin {
+    padding: 8px 16px;
+    border-radius: var(--radius);
+    font-size: 0.875rem;
+    font-weight: 600;
+    background-color: var(--color-primary);
+    border: none;
+    color: white;
+    transition: background 0.2s;
+}
+
+.btnLogin:hover {
+    background-color: var(--color-primary-hover);
+}
