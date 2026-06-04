@@ -4,7 +4,7 @@ import { createReview, deleteReview, getAverageRatingByMovie, getReviewsByMovie,
 
 export const addReview = async (req: Request, res: Response) => {
     try {
-        const { movieId, rating, comment } = req.body;
+        const { movieId, rating, comment, username } = req.body;
         const userId = (req as any).user.id;
 
         if (!movieId || !rating || !comment) {
@@ -24,7 +24,8 @@ export const addReview = async (req: Request, res: Response) => {
             userId,
             movieId,
             rating,
-            comment
+            comment,
+            username: username || "Usuario"
         });
 
         return res.status(201).json({ message: "Review created successfully.", review: newReview });

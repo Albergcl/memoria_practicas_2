@@ -22,6 +22,7 @@ export type Review = {
     _id: string;
     userId: string;
     movieId: string;
+    username?: string;
     rating: number;
     comment: string;
     createdAt: string;

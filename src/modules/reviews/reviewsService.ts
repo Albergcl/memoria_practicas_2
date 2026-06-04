@@ -4,7 +4,8 @@ interface CreateReviewData {
     userId: string,
     movieId: string,
     rating: number,
-    comment: string
+    comment: string,
+    username: string
 }
 
 interface UpdateReviewData {
@@ -27,6 +28,7 @@ export const createReview = async (db: Db, reviewData: CreateReviewData) => {
     const newReview = {
         userId: new ObjectId(reviewData.userId),
         movieId: new ObjectId(reviewData.movieId),
+        username: reviewData.username,
         rating: reviewData.rating,
         comment: reviewData.comment,
         createdAt: new Date()

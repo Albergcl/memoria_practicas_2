@@ -82,6 +82,7 @@ const MovieDetailPage = () => {
                 movieId: id,
                 rating: reviewRating,
                 comment: reviewComment,
+                username: user!.username,
             });
             setReviewComment("");
             setReviewRating(5);
@@ -204,7 +205,7 @@ const MovieDetailPage = () => {
                             key={review._id}
                             review={review}
                             isOwner={false}
-                            username="Usuario"
+                            username={review.username || "Usuario"}
                             onUpdated={fetchReviews}
                             onDeleted={fetchReviews}
                         />
